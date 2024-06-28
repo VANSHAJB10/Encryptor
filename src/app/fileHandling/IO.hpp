@@ -1,8 +1,8 @@
-#ifdef IO_HP
+#ifndef IO_HP
 #define IO_HPP
 
 #include <fstream>
-#include <strings>
+#include <string>
 using namespace std;
 #include <iostream>
 
@@ -16,7 +16,7 @@ class IO{
     private:
         fstream file_stream; 
 
-}
+};
 
 
 #endif
