@@ -37,6 +37,7 @@ struct Task {
             
             IO io(filePath);
             fstream f_stream = move(io.getFileStream());
+            //moving ownership of the fstream and not the reference 
             if (f_stream.is_open()) {
                 return Task(move(f_stream), action, filePath);
             } else {
