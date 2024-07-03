@@ -19,6 +19,24 @@
           "ignoreFailures": true
         }
       ]
-    }
+    },
+    {
+      "name": "Debug encrypt_decrypt",
+      "type": "gdb",
+      "request": "launch",
+      "program": "${workspaceFolder}/encrypt_decrypt",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+  },
+  {
+      "name": "Debug cryption (standalone)",
+      "type": "gdb",
+      "request": "launch",
+      "program": "${workspaceFolder}/cryption",
+      "args": ["your_task_data_here"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build",
+  }
   ]
 }
