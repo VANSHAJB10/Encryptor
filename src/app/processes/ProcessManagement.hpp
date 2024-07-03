@@ -14,6 +14,7 @@ public:
 
 private:
     std::queue<std::unique_ptr<Task>> taskQueue;
+    //only accessible to Process Management
 };
 
 #endif
